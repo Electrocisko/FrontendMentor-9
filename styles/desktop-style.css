@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ---------variables ------------ */
+:root {
+    /* colors */
+    /* Primary */
+    --color-Tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --color-Dark-Slate-Grey: hsl(249, 10%, 26%);
+    --color-Charcoal-Grey: hsl(235, 18%, 26%);
+    --color-Grey: hsl(231, 7%, 60%);
+    --color-White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-Dark-Slate-Grey);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-White);
+    border-radius: 25px;
+    width: 700px;
+    height: 480px;
+    display: flex;
+    
+}
+
+.card-left {
+    width: 50%;
+    height: 100%;
+}
+
+.card-right {
+    width: 50%;
+
+}
+
+.card-right-image {
+  
+  background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 440px;
+  margin: 20px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
