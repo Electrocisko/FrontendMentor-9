@@ -83,10 +83,20 @@ form {
     flex-direction: column;
 }
 
+.label-text{
+    display: flex;
+    justify-content: space-between  ;
+}
+
 .form-label{
   font-size: 10px;
   margin-bottom: 5px;
-  margin-top: 15px;
+}
+
+.form-label-wrong {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #ff6251;
 }
 
 input {
@@ -100,6 +110,12 @@ input {
   padding-left: 20px;
   cursor: pointer;
 }
+
+.email-wrong {
+    background-color: #ffe8e6;
+    border: solid red 0.5px !important;
+}
+
 
 .btn-submit{
     border: none;   
@@ -133,6 +149,10 @@ input {
   font-weight: 700;
 }
 
+.card-thanks p span {
+    font-weight: bold;
+   }
+
 .card-thanks img {
     height: 45px;
     width: 45px;
@@ -144,7 +164,6 @@ input {
     height: 2.5rem;
     width: 100%;
     border-radius: 5px;
-  
     background-color: var(--color-Dark-Slate-Grey);
     cursor: pointer;
   }

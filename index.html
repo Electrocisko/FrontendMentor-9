@@ -38,8 +38,12 @@
             <li><img src="./assets/images/icon-list.svg" alt="icon">And much more!</li>
           </ul>
         </div>
-        <form>
-          <label for="email" class="form-label">Email address</label>
+        <form id="email-form">
+          <div class="label-text">
+            <p for="email" class="form-label">Email address</p>
+            <p for="email" class="form-label-wrong hide-card">Valid email required</p>
+          </div>
+     
           <input
             type="text"
             name="email"
@@ -60,13 +64,10 @@
       <div class="card-thanks-text-container">
         <img src="./assets/images/icon-success.svg" alt="icon succes" srcset="">
         <h2>Thanks for subscribing! </h2>
-        <p> A confirmation email has been sent to ash@loremcompany.com. 
+        <p> A confirmation email has been sent to <span id="email-ok">ash@loremcompany.com</span>. 
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
-
-  
-        <button>Dismiss message</button>
-
+        <button class="dismiss-btn">Dismiss message</button>
     </div>
 
     <!-- Sign-up form start -->
@@ -85,5 +86,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Francisco J Zuidwijk</a>.
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
