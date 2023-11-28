@@ -29,13 +29,27 @@ body {
 }
 
 .container {
+    /* height: 800px; */
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .card-left{
-    border: solid red;
+    padding: 15px;
+}
+
+.card-left li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+
+.card-left li img {
+    height: 16px;
+    margin-right: 5px;
 }
 
 .card-right {
@@ -48,14 +62,71 @@ body {
 }
 
 
+h1 {
+    font-size: 2.2rem ;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight:400;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+  font-size: 10px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+input {
+    border: none;
+}
+
+#email {
+  border: solid black 0.5px;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.btn-submit{
+    border: none;   
+    color: var(--color-White);
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--color-Dark-Slate-Grey);
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background-image: linear-gradient(to right, #ff6251, #fe5476);
+    box-shadow: 0px 10px 15px 10px #fed2cf;
+}
+
+
 .attribution {
-    font-size: 11px;
+    font-size: 8px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    font-size: 8px;
 }
+
 
 
 

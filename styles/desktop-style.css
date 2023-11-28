@@ -107,7 +107,6 @@ input {
     margin-top: 20px;
     background-color: var(--color-Dark-Slate-Grey);
     cursor: pointer;
-
 }
 
 .btn-submit:hover{
@@ -132,6 +131,7 @@ input {
 .attribution {
     font-size: 11px;
     text-align: center;
+ 
 }
 
 .attribution a {
