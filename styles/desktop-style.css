@@ -5,7 +5,9 @@
     /* colors */
     /* Primary */
     --color-Tomato: hsl(4, 100%, 67%);
-
+    --color-btn1: rgba(255,84,118,255);
+    --color-btn2: rgba(255,98,81,255);
+  
     /* Neutral */
     --color-Dark-Slate-Grey: hsl(249, 10%, 26%);
     --color-Charcoal-Grey: hsl(235, 18%, 26%);
@@ -41,16 +43,67 @@ body {
 
 .card-left {
     width: 50%;
-    height: 100%;
+    height: auto;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
 }
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight:400;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+    border: none;
+}
+
+#email {
+  border: solid black 0.5px;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.btn-submit{
+    border: none;
+    color: var(--color-White);
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #ff6251, #fe5476);
+    box-shadow: 0px 10px 15px 10px #fed2cf;
+}
+
 
 .card-right {
     width: 50%;
-
 }
 
 .card-right-image {
-  
   background-image: url("../assets/images/illustration-sign-up-desktop.svg");
   background-size: cover;
   background-position: center;
@@ -58,7 +111,6 @@ body {
   height: 440px;
   margin: 20px;
 }
-
 
 .attribution {
     font-size: 11px;
@@ -68,3 +120,4 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
