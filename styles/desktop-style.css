@@ -38,7 +38,6 @@ body {
     width: 700px;
     height: 480px;
     display: flex;
-    
 }
 
 .card-left {
@@ -48,7 +47,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+}
+
+.card-left li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-left li img {
+    height: 16px;
+    margin-right: 5px;
 }
 
 h1 {
@@ -86,14 +96,21 @@ input {
   height: 2.5rem;
   border-radius: 5px;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .btn-submit{
-    border: none;
+    border: none;   
     color: var(--color-White);
     height: 2.5rem;
     border-radius: 5px;
     margin-top: 20px;
+    background-color: var(--color-Dark-Slate-Grey);
+    cursor: pointer;
+
+}
+
+.btn-submit:hover{
     background-image: linear-gradient(to right, #ff6251, #fe5476);
     box-shadow: 0px 10px 15px 10px #fed2cf;
 }

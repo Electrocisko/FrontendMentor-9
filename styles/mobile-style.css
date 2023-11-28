@@ -5,7 +5,9 @@
     /* colors */
     /* Primary */
     --color-Tomato: hsl(4, 100%, 67%);
-
+    --color-btn1: rgba(255,84,118,255);
+    --color-btn2: rgba(255,98,81,255);
+  
     /* Neutral */
     --color-Dark-Slate-Grey: hsl(249, 10%, 26%);
     --color-Charcoal-Grey: hsl(235, 18%, 26%);
@@ -22,14 +24,62 @@
 }
 
 body {
-    height: fit-content;
+    display:flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-Red);
-    background-image: url('../images/bg-intro-mobile.png');
 }
+
+.card-left{
+    border: solid red;
+}
+
+.card-right {
+    background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 250px;
+    order: -1;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
