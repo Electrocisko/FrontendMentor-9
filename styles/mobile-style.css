@@ -117,6 +117,47 @@ input {
 }
 
 
+.card-thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    width: 360px;
+    background-color: var(--color-White);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.card-thanks h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-thanks img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .card-thanks button {
+    border: none;   
+    color: var(--color-White);
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px;
+  
+    background-color: var(--color-Dark-Slate-Grey);
+    cursor: pointer;
+  }
+
+  .card-thanks button:hover {
+    background-image: linear-gradient(to right, #ff6251, #fe5476);
+    box-shadow: 0px 10px 15px 10px #fed2cf;
+  }
+
+.card-thanks-text-container{
+    margin-top: 25px;
+}
+
 .attribution {
     font-size: 8px;
     text-align: center;
@@ -127,6 +168,9 @@ input {
     font-size: 8px;
 }
 
+.hide-card {
+    display: none;
+}
 
 
 
